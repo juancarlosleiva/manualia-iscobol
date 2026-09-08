@@ -3,41 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Buscador técnico de la documentación isCOBOL.">
-  <title>Manualia · isCOBOL</title>
+  <meta name="description" content="Biblioteca técnica y buscador de documentación isCOBOL.">
+  <title>Manualia · Biblioteca isCOBOL</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Base de conocimiento local</p>
-      <h1>Consulta tus manuales<br><em>sin perder el contexto.</em></h1>
-      <p class="intro">Busca entre la documentación de isCOBOL y lleva los fragmentos precisos a ChatGPT para profundizar como programador.</p>
-      <label class="search" for="query">
-        <span aria-hidden="true">⌕</span>
-        <input id="query" type="search" placeholder="Ej.: compilar con Java 21, JDBC, OCCURS…" autocomplete="off">
-        <kbd>Enter</kbd>
-      </label>
-      <div class="shortcuts"><button class="chip" data-query="compilar">compilar</button><button class="chip" data-query="JDBC">JDBC</button><button class="chip" data-query="WebClient">WebClient</button><button class="chip" data-query="OCCURS">OCCURS</button></div>
-    </section>
-
-    <section class="library" aria-labelledby="results-title">
-      <div class="section-head">
-        <div><p class="eyebrow">Biblioteca</p><h2 id="results-title">Carga los manuales para comenzar</h2></div>
-        <p id="status" aria-live="polite">Preparando índice…</p>
-      </div>
-      <div id="results" class="results"></div>
+  <a class="skip-link" href="#query">Ir a búsqueda</a>
+  <header class="topbar">
+    <a class="brand" href="#"><b>M</b><span>Manualia<small>Biblioteca técnica isCOBOL</small></span></a>
+    <span>Las búsquedas se procesan en tu navegador</span>
+  </header>
+  <main class="app-shell">
+    <aside class="sidebar" aria-label="Manuales disponibles">
+      <div class="sidebar-title"><div><p class="eyebrow">Biblioteca</p><strong id="library-count">Cargando…</strong></div></div>
+      <label for="manual-filter">Abrir un manual</label>
+      <select id="manual-filter"><option value="">Selecciona un manual…</option></select>
+      <nav id="manual-list" class="manual-list"></nav>
+    </aside>
+    <section class="workspace">
+      <section class="hero">
+        <p class="eyebrow">Consulta técnica</p>
+        <h1>Encuentra la respuesta.<br><em>Conserva el contexto.</em></h1>
+        <p>Busca sintaxis, errores, conceptos o componentes de isCOBOL. Abre cada resultado para revisar su pasaje antes de consultar a ChatGPT.</p>
+      </section>
+      <form id="search-form" class="search-box" role="search">
+        <label class="sr-only" for="query">Buscar en los manuales</label><span aria-hidden="true">⌕</span>
+        <input id="query" type="search" placeholder="Ej.: configurar JDBC, error de compilación, OCCURS DEPENDING" autocomplete="off">
+        <button>Buscar</button>
+      </form>
+      <div class="search-tools"><div class="chips"><button class="chip" type="button" data-query="compilar">Compilar</button><button class="chip" type="button" data-query="JDBC">JDBC</button><button class="chip" type="button" data-query="WebClient">WebClient</button><button class="chip" type="button" data-query="OCCURS">OCCURS</button></div><span id="status" aria-live="polite">Preparando biblioteca…</span></div>
+      <section class="content-grid">
+        <section class="result-panel" aria-labelledby="results-title"><div class="panel-title"><div><p class="eyebrow">Resultados</p><h2 id="results-title">Explora la biblioteca</h2></div><span id="result-count"></span></div><div id="results" class="results"></div></section>
+        <aside id="reader" class="reader" aria-live="polite"><div class="reader-empty"><i>⌘</i><h2>Espacio de lectura</h2><p>Selecciona un resultado para leer el fragmento completo y usarlo como contexto.</p></div></aside>
+      </section>
     </section>
   </main>
-  <template id="result-template">
-    <article class="result">
-      <div class="result-meta"><span class="tag"></span><span class="match-count"></span></div>
-      <h3></h3>
-      <p class="excerpt"></p>
-      <div class="actions"><button class="copy">Copiar contexto</button><button class="ask">Consultar en ChatGPT ↗</button></div>
-    </article>
-  </template>
-  <footer>Manualia funciona enteramente en tu navegador. Tus consultas y manuales no pasan por un servidor propio.</footer>
+  <template id="result-template"><article class="result-card"><button type="button"><span class="result-top"><span class="document-name"></span><span class="score"></span></span><strong class="result-title"></strong><span class="excerpt"></span><span class="open-hint">Abrir contexto <b>→</b></span></button></article></template>
+  <footer><strong>Manualia</strong> · Búsqueda local en documentación isCOBOL · Pulsa <kbd>/</kbd> para buscar</footer>
   <script src="app.js"></script>
 </body>
 </html>

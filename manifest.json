@@ -1,102 +1,22 @@
-﻿[
-    {
-        "title":  "Appendices",
-        "file":  "Appendices.txt",
-        "bytes":  1338114
-    },
-    {
-        "title":  "connect",
-        "file":  "connect.txt",
-        "bytes":  360
-    },
-    {
-        "title":  "c-treeRTG for isCOBOL",
-        "file":  "c-treeRTG_for_isCOBOL.txt",
-        "bytes":  265471
-    },
-    {
-        "title":  "Interoperating with isCOBOL",
-        "file":  "Interoperating_with_isCOBOL.txt",
-        "bytes":  69348
-    },
-    {
-        "title":  "Introduction",
-        "file":  "Introduction.txt",
-        "bytes":  50605
-    },
-    {
-        "title":  "isCOBOL Application Server",
-        "file":  "isCOBOL_Application_Server.txt",
-        "bytes":  126416
-    },
-    {
-        "title":  "isCOBOL DatabaseBridge",
-        "file":  "isCOBOL_DatabaseBridge.txt",
-        "bytes":  81164
-    },
-    {
-        "title":  "isCOBOL EIS",
-        "file":  "isCOBOL_EIS.txt",
-        "bytes":  251890
-    },
-    {
-        "title":  "isCOBOL Extension for Visual Studio Code",
-        "file":  "isCOBOL_Extension_for_Visual_Studio_Code.txt",
-        "bytes":  27092
-    },
-    {
-        "title":  "isCOBOL IDE",
-        "file":  "isCOBOL_IDE.txt",
-        "bytes":  611112
-    },
-    {
-        "title":  "isCOBOL NoSQL Bridge",
-        "file":  "isCOBOL_NoSQL_Bridge.txt",
-        "bytes":  38297
-    },
-    {
-        "title":  "isCOBOL UDBC",
-        "file":  "isCOBOL_UDBC.txt",
-        "bytes":  37213
-    },
-    {
-        "title":  "isCOBOL WebClient",
-        "file":  "isCOBOL_WebClient.txt",
-        "bytes":  139435
-    },
-    {
-        "title":  "Language Reference",
-        "file":  "Language_Reference.txt",
-        "bytes":  1476529
-    },
-    {
-        "title":  "Release Notes",
-        "file":  "Release_Notes.txt",
-        "bytes":  20743
-    },
-    {
-        "title":  "Release Overview",
-        "file":  "Release_Overview.txt",
-        "bytes":  673201
-    },
-    {
-        "title":  "SDK Users Guide",
-        "file":  "SDK_Users_Guide.txt",
-        "bytes":  1194527
-    },
-    {
-        "title":  "Transitioning to isCOBOL",
-        "file":  "Transitioning_to_isCOBOL.txt",
-        "bytes":  132717
-    },
-    {
-        "title":  "User Interface",
-        "file":  "User_Interface.txt",
-        "bytes":  1626820
-    },
-    {
-        "title":  "User Interface2",
-        "file":  "User_Interface2.txt",
-        "bytes":  1626820
-    }
+[
+  {"title":"Appendices","file":"Appendices.txt","bytes":1338114},
+  {"title":"connect","file":"connect.txt","bytes":360},
+  {"title":"c-treeRTG for isCOBOL","file":"c-treeRTG_for_isCOBOL.txt","bytes":265471},
+  {"title":"Interoperating with isCOBOL","file":"Interoperating_with_isCOBOL.txt","bytes":69348},
+  {"title":"Introduction","file":"Introduction.txt","bytes":50605},
+  {"title":"isCOBOL Application Server","file":"isCOBOL_Application_Server.txt","bytes":126416},
+  {"title":"isCOBOL DatabaseBridge","file":"isCOBOL_DatabaseBridge.txt","bytes":81164},
+  {"title":"isCOBOL EIS","file":"isCOBOL_EIS.txt","bytes":251890},
+  {"title":"isCOBOL Extension for Visual Studio Code","file":"isCOBOL_Extension_for_Visual_Studio_Code.txt","bytes":27092},
+  {"title":"isCOBOL IDE","file":"isCOBOL_IDE.txt","bytes":611112},
+  {"title":"isCOBOL NoSQL Bridge","file":"isCOBOL_NoSQL_Bridge.txt","bytes":38297},
+  {"title":"isCOBOL UDBC","file":"isCOBOL_UDBC.txt","bytes":37213},
+  {"title":"isCOBOL WebClient","file":"isCOBOL_WebClient.txt","bytes":139435},
+  {"title":"Language Reference","file":"Language_Reference.txt","bytes":1476529},
+  {"title":"Release Notes","file":"Release_Notes.txt","bytes":20743},
+  {"title":"Release Overview","file":"Release_Overview.txt","bytes":673201},
+  {"title":"SDK Users Guide","file":"SDK_Users_Guide.txt","bytes":1194527},
+  {"title":"Transitioning to isCOBOL","file":"Transitioning_to_isCOBOL.txt","bytes":132717},
+  {"title":"User Interface","file":"User_Interface.txt","bytes":1626820},
+  {"title":"User Interface2","file":"User_Interface2.txt","bytes":1626820}
 ]
